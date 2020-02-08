@@ -1,5 +1,7 @@
 package data
 
+import "testing"
+
 // test data
 var users = []User{
 	{
@@ -20,3 +22,6 @@ func setup() {
 	UserDeleteAll()
 }
 
+func Test_Data(t *testing.T) {
+	setup()
+}
